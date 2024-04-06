@@ -1,0 +1,48 @@
+.sidebar {
+  height: 100vh;
+  background: #071a2b;
+  width: 15rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.head {
+  padding-top: 3rem;
+}
+
+.head h2 {
+  color: white;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.tabLi {
+  padding: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.tabLi:hover {
+  background: #fcff5b;
+  border-radius: 10px;
+  width: 160px;
+}
+
+.tabLink {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 160px;
+}
+
+.tabLi:hover .tabLink {
+  color: #071a2b;
+}
