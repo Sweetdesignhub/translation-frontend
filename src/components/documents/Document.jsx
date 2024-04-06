@@ -17,7 +17,7 @@ function Document() {
   const fetchSupportedLanguages = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/supported-languages"
+        "https://translation-backend-jyki.onrender.com/supported-languages"
       );
       setSupportedLanguages(response.data);
     } catch (error) {
@@ -34,7 +34,7 @@ function Document() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/detect-language",
+        "https://translation-backend-jyki.onrender.com/detect-language",
         formData
       );
       const detectedLanguageCode = response.data.detectedLanguage;
@@ -62,7 +62,7 @@ function Document() {
 
     try {
       const response = await axios.post(
-        `http://localhost:3000/translate?target=${targetLanguage}`,
+        `https://translation-backend-jyki.onrender.com/translate?target=${targetLanguage}`,
         formData,
         {
           responseType: "blob",
